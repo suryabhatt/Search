@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dip" >
+ 
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item" />
+ 
+    <EditText
+        android:id="@+id/item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemName"
+        android:inputType="text" android:drawableRight="@android:drawable/ic_btn_speak_now" />
+    
+     <TextView
+        android:id="@+id/txtlocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/item"
+        android:text="@string/location" />
+ 
+   <EditText
+        android:id="@+id/location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtlocation"
+        android:inputType="text" android:drawableRight="@android:drawable/ic_btn_speak_now" >
+
+    </EditText>
+    
+    <Button
+        android:id="@+id/addPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:text="@string/photo" />
+
+    
+    
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addPhoto"
+        android:text="@string/submit" />
+ 
+</RelativeLayout>
